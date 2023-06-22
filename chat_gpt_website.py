@@ -20,5 +20,12 @@ def main():
     # Sidebar (right empty space for advertising)
     right_sidebar = st.sidebar.empty()
 
+    # Insert the AdSense ad code
+    ad_code = """
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4777786136450145"
+     crossorigin="anonymous"></script>
+    """
+    st.components.v1.html(ad_code, height=250)
+
 if __name__ == "__main__":
     main()
