@@ -27,5 +27,15 @@ def main():
     """
     st.components.v1.html(ad_code, height=250)
 
+    # Custom CSS to hide the GitHub logo
+    custom_css = """
+    <style>
+    #MainMenu {
+        visibility: hidden;
+    }
+    </style>
+    """
+    st.markdown(custom_css, unsafe_allow_html=True)
+
 if __name__ == "__main__":
     main()
